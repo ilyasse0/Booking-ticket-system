@@ -56,8 +56,6 @@ This project is a **backend ticket booking system** built with **Spring Boot mic
 
 ---
 
-![Architecture](docs/architecture.png)
-
 ## 🛠️ How to Run the Project
 
 ### 1. Clone the Repository
