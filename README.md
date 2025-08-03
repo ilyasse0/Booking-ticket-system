@@ -62,3 +62,6 @@ This project is a **backend ticket booking system** built with **Spring Boot mic
 ```bash
 git clone https://github.com/your-username/ticket-booking-sys.git
 cd ticket-booking-sys
+
+
+![Architecture](docs/architecture.png)
