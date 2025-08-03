@@ -1,0 +1,17 @@
+# IDE files
+.idea/
+*.iml
+
+# Build artifacts
+target/
+**/target/
+
+# Docker volumes
+volume-data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

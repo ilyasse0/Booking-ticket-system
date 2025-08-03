@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: order-service
+
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: order-service
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.type.mapping: bookingEvents:com.ticket.commonevents.BookingEvents
+
+      auto-offset-reset: earliest
+
+
+
+  datasource:
+    url: jdbc:postgresql://localhost:5435/orders
+    username: ilyasse
+    password: ilyasse123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+server:
+  port: 8086
+
+
+inventory:
+  service:
+    url: http://localhost:8080/api/v1
+
+
