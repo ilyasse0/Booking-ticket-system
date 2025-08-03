@@ -13,7 +13,7 @@ This project is a **backend ticket booking system** built with **Spring Boot mic
 
 ## 📌 Architecture Overview
 
-![Architecture](https://github.com/your-username/ticket-booking-sys/assets/architecture-diagram.png) <!-- Replace with actual link or embed -->
+![Architecture](archi-micro.png) 
 
 ### Key Components:
 | Service             | Description |
