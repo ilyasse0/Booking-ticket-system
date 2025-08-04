@@ -37,7 +37,7 @@ This project is a **backend ticket booking system** built with **Spring Boot mic
 - ✅ PostgreSQL for data persistence
 - ✅ Dockerized microservices (`docker-compose.yml`)
 - ✅ Modular code structure for each service
-- ✅ Swagger API documentation (optional)
+- ✅ Swagger API documentation 
 - ✅ Secure and scalable design
 
 ---
